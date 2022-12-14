@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="GMM" id="1E32D634-273F-1D81-CDD1-07AFDE037AD0" version="3.5">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-12 14:13:48 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1E32D634-273F-1D81-CDD1-07AFDE037AD0</designId>
+</OSDM_Design>

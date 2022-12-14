@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B12777A1-2BE6-D6B3-B9D9-973C3DDD1F42" name="T_GMM_PROFILE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-12 14:43:26 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_profile" id="0D617B64-F36C-168D-874D-1BCDB887B9EC">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-12 15:10:58 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="blob_photo" id="C3234567-8995-459D-9C19-7D3BB069AB24">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-12 15:11:09 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="l_keep_connected" id="CE24D0DB-B58F-1A2E-9108-73C45C9BF0A7">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 11:25:00 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="str_nickname" id="84A41507-9489-B7C4-5A52-28AE3CB5EBA3">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 18:31:12 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33BA7454-3E88-0DFA-969B-9D148EC01414" name="T_GMM_PROFILE PK">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-12 15:11:05 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D617B64-F36C-168D-874D-1BCDB887B9EC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

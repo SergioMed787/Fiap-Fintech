@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="guardar" directorySegmentName="seg_0" id="3AC29FB7-4876-6399-C475-2B4E8C14B133">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:02:39 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<sourcePk>B15E27A3-338F-E4A3-C8AE-A1A48DC57250</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>90ECEF72-56E5-4F56-356D-DC71607BD176</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>522E2D6C-3DF0-EB84-F4F2-6290FDA5DA5F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

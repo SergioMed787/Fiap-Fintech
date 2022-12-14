@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="06EAEB0C-392A-051F-98A2-CA4F5E7B4210" containerWithKeyObject="10668EDE-90D2-8CF5-E07C-22A2DA8D2F71" localFKIndex="AC909C66-F32F-8B12-4678-7ACD1EB404A9" name="FK_SYNC_BANK_STAT_CAT_AUT_SYNC">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>749DF6ED-8670-77AC-4D1A-4F40DA581C36</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<referredTableLongName>T_GMM_CATEGORY_AUTO_SYNC</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BC148563-E5D4-F0A3-BF26-185561CF0E87</referredTableID>
+<keyObject>682C2AA6-80BD-5F2F-30B5-CCE2DEC75A89</keyObject>
+<referredKeyID>682C2AA6-80BD-5F2F-30B5-CCE2DEC75A89</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_category_auto_sync,id_category</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

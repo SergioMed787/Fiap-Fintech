@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A19F870F-F98A-96B8-8887-7950FEDDBF38" name="T_GMM_CATEGORY">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>3AA12676-8478-B36B-0153-40E7446B8331</generatorID>
+<notes><![CDATA[Um perfil tem categorias associadas nativas (padrões do sistema)  e outras que o usuário poderá cadastrar.
+A relação entre categoria e perfil é de que o perfil deve ter pelo menos uma categoria.
+Essa categoria de descrição CATEGORIZAR representa que não existe ainda uma definição automática da sincronização ou manual do usuário. Permitindo popular a tabela T_GMM_CATEGORY_AUTO_SYNC com o lançamento (str_release) a pelo menos uma categoria CATEGORIZAR.
+
+Categorias cadastradas por padrão de sistema, exemplos:
+
+CATEGORIZAR
+BARES / RESTAURANTES
+TRANSPORTE
+MERCADO
+TRANSFERÊNCIA
+MORADIA
+TV / INTERNET / TELEFONE
+RENDIMENTO
+TAXAS BANCÁRIAS
+PAGAMENTO DE CARTÃO
+
+
+
+]]></notes>
+<ownerDesignName>GMM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_category" id="A51675B0-731E-FC12-0090-F891649B6B7A">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>A56C1051-8D0A-0A07-A843-9799C5961976</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_profile" id="C1FDDEC1-99B3-A5B0-6C69-EE05F301AC7D">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>701CD245-46C2-2E21-9A0F-1FAF5285B118</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A7EC657-D07C-E2AB-C364-0F2BBEFEA4B8" referredColumn="4A50CDE2-00D3-9838-933A-D6971AE97FA2"/>
+</associations>
+</Column>
+<Column name="str_description" id="60DD8EB5-4287-69A0-C714-2559F1F915DE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>FA019408-F582-47BC-A723-F540077A925B</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA553C30-F3E5-C947-5F38-3CCD8A73243C" name="PK_CATEGORY">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>A65BE8E7-78AA-58ED-AAB0-245B61EA06DA</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A51675B0-731E-FC12-0090-F891649B6B7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11F0690E-D15F-B757-7546-DE5CD82300D0" name="FK_CATEGORY_PROFILE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>8BC799D4-A258-3544-8684-49D2D45A9616</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1FDDEC1-99B3-A5B0-6C69-EE05F301AC7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

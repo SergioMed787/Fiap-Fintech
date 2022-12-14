@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DABE4B9E-04C8-CF0D-7A17-1831FBD6A5B0" name="T_GMM_SYNC_BANK_STATEMENT">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-12 14:54:01 UTC</createdTime>
+<notes><![CDATA[Um perfil pode ter várias contas bancárias associadas.
+Uma conta bancária pode ou não ser associada ao extrato sincronizado, pois existe também os lançamentos manuais sem ligação com instituição bancária ou corretora de valores.]]></notes>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_sync_back_statement" id="952CD39C-DF6A-DF9F-CD80-3285D6F79324">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 18:34:38 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_profile1" id="DCF830A6-EB6E-4F08-43E9-60B6939BC69F">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 18:41:50 UTC</createdTime>
+<generatorID>49C53B22-C2D9-83A5-4051-63E133B0EF43</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<referedAttribute>0D617B64-F36C-168D-874D-1BCDB887B9EC</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_account_setting" id="E437FE06-7275-68F4-5DCD-BE72C2DF939D">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 18:54:46 UTC</createdTime>
+<generatorID>4E435898-0A99-3F86-98D3-A3F1B0AF8870</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B4B3B3BC-4D1F-6050-FF6E-D63648043EEF</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_category_auto_sync" id="03C53CBF-DDF4-39A4-1ABC-B166564B0C39">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 19:34:42 UTC</createdTime>
+<generatorID>749DF6ED-8670-77AC-4D1A-4F40DA581C36</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<referedAttribute>11290101-EC89-5AE5-B7E2-66E0B3017F5B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_category1" id="753E5274-54E5-3EDF-2349-267EF2DFBB5B">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 19:34:42 UTC</createdTime>
+<generatorID>749DF6ED-8670-77AC-4D1A-4F40DA581C36</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<referedAttribute>A14A56E8-BE7A-C7CB-F280-1F996E60FB72</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_release_date" id="EBFE4A4D-E4EE-7F3A-1CF9-20FF18B69FD4">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 18:34:56 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vlr_release_value" id="B3A04FE3-6FB3-2B9F-ACB6-C02E9A367B2F">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 18:37:31 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="str_release_type" id="034EB8D5-6B24-0B81-83A0-455ECF2A7163">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 18:37:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Receita/Despesa
+]]></commentInRDBMS>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2753FF6B-E703-FE3D-210B-8C42485B7A93" name="T_GMM_SYNC_BANK_STATEMENT PK">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 11:41:34 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>952CD39C-DF6A-DF9F-CD80-3285D6F79324</attributeRef>
+<attributeRef>DCF830A6-EB6E-4F08-43E9-60B6939BC69F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

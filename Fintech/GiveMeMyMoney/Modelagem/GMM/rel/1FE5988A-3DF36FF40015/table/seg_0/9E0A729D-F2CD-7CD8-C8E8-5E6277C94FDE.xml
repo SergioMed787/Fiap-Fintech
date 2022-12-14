@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E0A729D-F2CD-7CD8-C8E8-5E6277C94FDE" name="T_GMM_SYNC_ACCOUNT_BALANCE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>522E2D6C-3DF0-EB84-F4F2-6290FDA5DA5F</generatorID>
+<notes><![CDATA[Armazenar dados da última sincronização. ]]></notes>
+<ownerDesignName>GMM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_account_settings" id="652C06C3-A0AE-612B-53BB-079EEB5FD6F9">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>D4471DD6-A166-D085-3A18-BEC1AC39E902</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EF2B9F1-A74D-4804-2C44-7537C19C16B6" referredColumn="61977B53-E86F-D020-036E-6F6A6AC2603D"/>
+</associations>
+</Column>
+<Column name="vlr_account_balance" id="2AF17496-A93B-F61A-D542-97CC98F6DD6E">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>016A531D-2671-C9AB-5EB7-86654B7EBF97</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,18,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vlr_credit_card_balance" id="188496C8-45F4-B557-A76B-B11686CAEAF4">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>CC924D83-0BA6-A23E-D0BF-E0A601FDEC48</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,18,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_last_sync" id="7416DC7F-779A-7FDF-32ED-FAF1919F03CA">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>E2D600C3-5028-AF8B-1078-6A6C42ABF27C</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB75D958-3A0D-021A-947D-28B2F5FC5D84" name="PK_SYNC_ACCOUNT_BALANCE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>5879EAD9-D05C-911B-6A1C-277A599012B2</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="652C06C3-A0AE-612B-53BB-079EEB5FD6F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16CE27A4-57FB-90E4-A516-3ED04C3EF26F" name="FK_SYNC_ACCOUNT_SETTINGS">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>3AC29FB7-4876-6399-C475-2B4E8C14B133</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="652C06C3-A0AE-612B-53BB-079EEB5FD6F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

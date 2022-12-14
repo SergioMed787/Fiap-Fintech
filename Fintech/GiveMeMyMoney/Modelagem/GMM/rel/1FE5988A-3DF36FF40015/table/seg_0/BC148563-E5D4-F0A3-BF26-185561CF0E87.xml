@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC148563-E5D4-F0A3-BF26-185561CF0E87" name="T_GMM_CATEGORY_AUTO_SYNC">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>36338361-BB39-23B7-4ED1-D9BA79EEA7EF</generatorID>
+<notes><![CDATA[Todo lançamento (str_release) é categorizado no mínimo com a categoria padrão CATEGORIZAR até que o usuário troque ou não..]]></notes>
+<ownerDesignName>GMM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_category_auto_sync" id="65CB64FC-842E-D451-01AC-9F7454DD2BA6">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>11290101-EC89-5AE5-B7E2-66E0B3017F5B</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_category" id="A5C74604-CDC5-ECEA-5EC3-4F43FB8043C5">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>A14A56E8-BE7A-C7CB-F280-1F996E60FB72</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC9461E2-A894-223D-DA37-EEE2FC81B694" referredColumn="A51675B0-731E-FC12-0090-F891649B6B7A"/>
+</associations>
+</Column>
+<Column name="str_release" id="42A5A62D-530E-D59E-6378-3DB210B890B4">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>20BF632E-1CFB-807A-0F51-72295C6B9FDC</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="682C2AA6-80BD-5F2F-30B5-CCE2DEC75A89" name="PK_CATEGORY_AUTO_SYNC">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>3E9161B8-881B-57AF-2AE7-F4A11FE6D680</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65CB64FC-842E-D451-01AC-9F7454DD2BA6"/>
+<colUsage columnID="A5C74604-CDC5-ECEA-5EC3-4F43FB8043C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1048EDA5-9331-C2C4-4C43-709F681C1B18" name="FK_CATEGORY_AUTO_SYNC_CATEGORY">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>C096FD65-BB2C-21BB-4BF6-F3A4E14C0AA4</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5C74604-CDC5-ECEA-5EC3-4F43FB8043C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

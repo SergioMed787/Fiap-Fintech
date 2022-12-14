@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="522E2D6C-3DF0-EB84-F4F2-6290FDA5DA5F" name="T_GMM_SYNC_ACCOUNT_BALANCE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:01:08 UTC</createdTime>
+<notes><![CDATA[Armazenar dados da última sincronização. ]]></notes>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_account_setting" id="D4471DD6-A166-D085-3A18-BEC1AC39E902">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:02:39 UTC</createdTime>
+<generatorID>3AC29FB7-4876-6399-C475-2B4E8C14B133</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<referedAttribute>B4B3B3BC-4D1F-6050-FF6E-D63648043EEF</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vlr_account_balance" id="016A531D-2671-C9AB-5EB7-86654B7EBF97">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:03:27 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vlr_credit_card_balance" id="CC924D83-0BA6-A23E-D0BF-E0A601FDEC48">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:03:51 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_last_sync" id="E2D600C3-5028-AF8B-1078-6A6C42ABF27C">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:10:21 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5879EAD9-D05C-911B-6A1C-277A599012B2" name="T_GMM_ACCOUNT_BALANCE PK">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:03:22 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1FE5988A-4F76-1B98-DF9F-3DF36FF40015" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D4471DD6-A166-D085-3A18-BEC1AC39E902</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

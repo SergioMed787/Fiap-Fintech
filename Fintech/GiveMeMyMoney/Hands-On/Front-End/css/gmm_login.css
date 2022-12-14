@@ -1,0 +1,29 @@
+.gmm-login-pos-1 {
+    margin-left: 25px;
+}
+
+.gmm-login-pos-2 {
+    margin-left: 120px;
+}
+
+.input-checkbox{
+    font-family: Bangers;  
+    margin-left: 20px;
+    margin-top: 70px;
+    -webkit-text-fill-color: rgb(7,101,73); 
+}
+  
+.btn-submit-button {
+    font-family: Bangers; 
+    font-size: 26px; 
+    -webkit-text-fill-color: rgb(220,213,187); 
+    margin-left: 20px; 
+    background: rgb(84,142,116); 
+    border-style: solid;
+    border-color: rgb(7,101,73); 
+    height: 40px;
+    width: 240px;
+    text-shadow: none;
+}    
+  
+

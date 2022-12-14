@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B3F5D24-5650-4C75-39DB-D14328D8A86C" name="T_GMM_USER_PROFILE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>74DB1A94-1FF2-2BF3-09E5-4157D62FC29F</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_user_profile" id="2660C1ED-3AA2-4FC6-4355-BA28AC4F1BC7">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>93E47066-6006-43D5-6AB6-53C8DE2164E7</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_profile" id="CE510951-5680-67D8-72B5-7D0690347E9F">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>8C3DE3D9-CEF6-80E2-4C7D-7A2703FF82B5</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="310CC85D-C0A0-7386-C1DF-D37255B25031" referredColumn="4A50CDE2-00D3-9838-933A-D6971AE97FA2"/>
+</associations>
+</Column>
+<Column name="str_name" id="6F1213E7-63C1-E750-504A-3310F8E86B1B">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>5B6ED1F8-C20F-79A9-AF6F-D4089EFFE4CA</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="str_email" id="402FDFBD-4ACD-A495-BA6C-97CC0C2E3792">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>FBADB25E-61BB-2676-8155-3E31E3867330</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="str_phone" id="BC01031C-3287-E479-0075-1E6B0AB0C2F3">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>1C98E405-9963-77D0-58F8-524354C3C137</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="str_document_cpf" id="9F6DFE8E-A318-3DD6-B8D7-53F9D3BD9112">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>2756B756-4C93-C96E-CD4D-BEFD5E4DB2A8</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="str_password" id="0C138BBB-6641-681B-6F03-442E325A905F">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>D68E9BBB-1D02-EE48-016D-0FCBEA59B110</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="str_confirm_password" id="53D7E7EC-4AF8-3B17-C1B8-E6FB4A9B8CB2">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>5B23BE86-CFB0-4B48-820E-ABD94E5213F1</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="962B39BC-0269-F5EF-B50B-259CD7342EB4" name="PK_USER_PROFILE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>3A6373AC-15C8-B432-EE26-0E0F2D9EF40E</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2660C1ED-3AA2-4FC6-4355-BA28AC4F1BC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="670D80B5-25BD-5D53-EBCF-06A6EA527875" name="IDX_USER_PROFILE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<ownerDesignName>GMM</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>82D31665-8D6D-C4FF-C04A-6E708D540503</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CE510951-5680-67D8-72B5-7D0690347E9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B5F3DC8-78ED-13D9-E0CC-9E8D475E1426" name="FK_USER_PROFILE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>82D31665-8D6D-C4FF-C04A-6E708D540503</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE510951-5680-67D8-72B5-7D0690347E9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

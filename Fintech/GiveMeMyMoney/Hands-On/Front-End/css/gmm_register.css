@@ -1,0 +1,22 @@
+.gmm-register-step-font {
+  font-size: 22px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px; 
+}
+
+.gmm-register-alatsi {
+  font-family: Alatsi;  
+  font-size: 14px; 
+  font-weight: bold;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.fa-circle-arrow-right {
+  float: right;
+  font-size: 30px; 
+  color:rgb(4, 66, 48);
+  left: 200px;
+  margin-right: 30px;
+}   

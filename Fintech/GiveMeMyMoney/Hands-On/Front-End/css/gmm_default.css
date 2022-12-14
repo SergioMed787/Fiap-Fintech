@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Acme;
+    src: local(Acme), url(/Front-End/fonts/Acme-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bangers;
+    src: local(Bangers), url(/Front-End/fonts/Bangers-Regular.ttf);
+}
+
+.gmm-default-bg {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    background-color: rgb(220,213,187);   
+}  
+
+.gmm-green-bg {
+    background-color: rgb(7,101,73); 
+}    
+
+.gmm-midle-bg {
+    background-color: rgb(84,142,116); 
+}  
+
+
+.gmm-default-logo-font {
+    font-family: Acme;
+    font-size: 26px;
+    -webkit-text-fill-color: rgb(7,101,73); 
+    text-shadow: 0.1em 0.1em 0.05em rgb(186, 183, 183);
+    text-align: center;
+}
+
+.gmm-default-font {
+    font-family: Bangers;
+    font-size: 26px;
+    -webkit-text-fill-color: rgb(7,101,73); 
+    text-shadow: none;
+    text-align: center;
+  }
+
+.gmm-white-font {  
+  font-family: Bangers;
+  font-size: 26px;
+  -webkit-text-fill-color: white;
+  text-align: center;
+}  
+
+.gmm-midle-font {
+  font-family: Bangers;
+  font-size: 26px;
+  -webkit-text-fill-color: rgb(220,213,187);;
+  text-align: left;
+}  
+
+
+a.gmm-default-link:link, a.gmm-default-link:visited {
+    text-decoration: none;
+    -webkit-text-fill-color: rgb(220,213,187);
+}
+
+a.gmm-default-link:hover {
+    text-decoration: underline;
+    -webkit-text-fill-color: rgb(220,213,187);
+}
+
+a.gmm-default-link:active {
+    text-decoration: none
+}
+  
+.gmm-default-link {
+    font-family: Bangers;
+    font-size: 26px;
+    -webkit-text-fill-color: rgb(7,101,73); 
+    text-align: center;
+}
+
+a.gmm-green-link:link, a.gmm-green-link:visited {
+    text-decoration: none;
+    -webkit-text-fill-color: rgb(7,101,73); 
+}
+
+a.gmm-green-link:hover {
+    text-decoration: underline;
+    -webkit-text-fill-color: rgb(7,101,73); 
+}
+
+a.gmm-green-link:active {
+    text-decoration: none
+}
+  
+.gmm-green-link {
+    font-family: Bangers;
+    font-size: 18px;
+    -webkit-text-fill-color: rgb(7,101,73); 
+    text-align: left;
+}
+
+.gmm-icon-arrow-left {
+    font-size: 20px; 
+    color:rgb(4, 66, 48);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.gmm-icon-arrow-rigth {
+    font-size: 30px; 
+    color:rgb(4, 66, 48);
+    margin-right: 10px;
+}
+
+.gmm-box-step-all {
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 10px;
+}    
+  
+.gmm-box-step-1 {
+    margin-left: 10px;  
+}
+  
+.gmm-box-step-n {
+    margin-left: 55px;  
+}
+  
+.gmm-box-step-green {
+    height: 5px;
+    width: 45px;  
+    background: rgb(7,101,73);   
+}
+
+.gmm-box-step-white {
+    height: 5px;
+    width: 45px;
+    background: white;
+} 
+  
+.gmm-box-step-position {
+    position: fixed;
+}
+  

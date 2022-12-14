@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10668EDE-90D2-8CF5-E07C-22A2DA8D2F71" name="T_GMM_SYNC_BANK_STATEMENT">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>DABE4B9E-04C8-CF0D-7A17-1831FBD6A5B0</generatorID>
+<notes><![CDATA[Um perfil pode ter várias contas bancárias associadas.
+Uma conta bancária pode ou não ser associada ao extrato sincronizado, pois existe também os lançamentos manuais sem ligação com instituição bancária ou corretora de valores.]]></notes>
+<ownerDesignName>GMM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sync_back_statement" id="B6BE9B56-5600-A322-CBDB-9BE9EE369093">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>952CD39C-DF6A-DF9F-CD80-3285D6F79324</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_profile" id="01A29FF4-BF66-4A68-0BE4-B049A94317A7">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>DCF830A6-EB6E-4F08-43E9-60B6939BC69F</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DC8583E-65F5-A9A6-80CF-217DA4AA8465" referredColumn="4A50CDE2-00D3-9838-933A-D6971AE97FA2"/>
+</associations>
+</Column>
+<Column name="id_account_settings" id="9978BC08-076D-14F4-4D46-69D179DB9CCD">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>E437FE06-7275-68F4-5DCD-BE72C2DF939D</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28219B03-5A22-89A3-92F8-8CC78D18320B" referredColumn="61977B53-E86F-D020-036E-6F6A6AC2603D"/>
+</associations>
+</Column>
+<Column name="id_category_auto_sync" id="0379F383-AF06-DD07-87C5-FAA42655551E">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>03C53CBF-DDF4-39A4-1ABC-B166564B0C39</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06EAEB0C-392A-051F-98A2-CA4F5E7B4210" referredColumn="65CB64FC-842E-D451-01AC-9F7454DD2BA6"/>
+</associations>
+</Column>
+<Column name="id_category" id="72762AA6-5EFE-C2AF-FAFF-A154A11F5036">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>753E5274-54E5-3EDF-2349-267EF2DFBB5B</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06EAEB0C-392A-051F-98A2-CA4F5E7B4210" referredColumn="A5C74604-CDC5-ECEA-5EC3-4F43FB8043C5"/>
+</associations>
+</Column>
+<Column name="dt_release_date" id="8F8DB8C9-71E2-D184-7070-A801C2FD9DB8">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>EBFE4A4D-E4EE-7F3A-1CF9-20FF18B69FD4</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vlr_release_value" id="A00450D9-E9E4-6C76-D17E-FF31AADCBE40">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>B3A04FE3-6FB3-2B9F-ACB6-C02E9A367B2F</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,18,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="str_release_type" id="A7EC91FC-D66C-058B-F7EE-C820361C4671">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Receita/Despesa
+]]></commentInRDBMS>
+<generatorID>034EB8D5-6B24-0B81-83A0-455ECF2A7163</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="17632D5A-00A1-0847-AE9A-EF478F0E2234" name="PK_SYNC_BANK_STATEMENT">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>2753FF6B-E703-FE3D-210B-8C42485B7A93</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01A29FF4-BF66-4A68-0BE4-B049A94317A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC909C66-F32F-8B12-4678-7ACD1EB404A9" name="FK_SYNC_BANK_STAT_CAT_AUT_SYNC">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>749DF6ED-8670-77AC-4D1A-4F40DA581C36</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0379F383-AF06-DD07-87C5-FAA42655551E"/>
+<colUsage columnID="72762AA6-5EFE-C2AF-FAFF-A154A11F5036"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF3D1472-EBE8-8896-FC44-7BD419AE4E8D" name="FK_SYNC_BANK_STAT_PROFILE">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>49C53B22-C2D9-83A5-4051-63E133B0EF43</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01A29FF4-BF66-4A68-0BE4-B049A94317A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63388729-EAE2-529F-F723-169595FDFE95" name="FK_SYNC_BANK_STAT_ACCOUNT_SET">
+<createdBy>Mede787</createdBy>
+<createdTime>2022-11-13 20:35:48 UTC</createdTime>
+<generatorID>4E435898-0A99-3F86-98D3-A3F1B0AF8870</generatorID>
+<ownerDesignName>GMM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9978BC08-076D-14F4-4D46-69D179DB9CCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
